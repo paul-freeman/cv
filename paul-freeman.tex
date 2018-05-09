@@ -1,0 +1,165 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%    PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+    \smartdiagram[bubble diagram]{
+        \textbf{Data}\\\textbf{Engineering},
+        \textbf{Full Stack}\\\textbf{Web Dev},
+        \textbf{~~~~~OOP~~~~~~},
+        \textbf{Mobile}\\\textbf{Dev},
+        \textbf{Machine}\\\textbf{Learning},
+        \textbf{Test}\\\textbf{~~Automation~~},
+        \textbf{Statistical}\\\textbf{Analysis}
+    }
+}
+
+% Programming skill bars
+\programming{{JavaScript $\textbullet$ Assembly $\textbullet$ Lua / 3}, {C++ $\textbullet$ Java $\textbullet$ Kotlin / 3.5}, {Python $\textbullet$ C $\textbullet$ Haskell $\textbullet$ Elm / 5}}
+
+% Projects text
+\projects{\textbf{PLACE} - A modular laboratory automation web app, using a
+                  combination of Python, Elm, and JavaScript \\
+          \textbf{DTW} - A fast Cython implementation of the Dynamic Time
+                  Warping algorithm, designed to replace a slower R dependency \\
+          \textbf{RUS} - Python and C implementation of forward and inverse
+                  algorithms for Resonant Ultrasound Spectroscopy}
+
+%----------------------------------------------------------------------------------------
+%     PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Paul Freeman} % Your name
+\cvjobtitle{Computer Scientist} % Job
+% title/career
+
+\cvlinkedin{linkedin.com/in/freemapa}
+\cvgithub{github.com/paul-freeman}
+\cvnumberphone{0210416766} % Phone number
+\cvsite{anaconda.org/freemapa}{pypi.org/user/freemapa} % Personal websites
+\cvmail{paul.freeman.cs@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%     EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+    \twentyitem
+        {2014 - 2016}
+        {}
+        {MSc., Computer Science \textnormal{First Class Honours}}
+        {\href{http://www.uoguelph.ca/}{University of Auckland}}
+        {}
+        {}
+    \twentyitem
+        {2010 - 2014}
+    {}
+        {BSc., Computer Science \textnormal{Summa Cum Laude}}
+        {\href{http://www.unipune.ac.in/}{Oregon State University}}
+        {}
+        {}
+    %\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+\section{Research}
+\begin{twenty}
+    \twentyitem
+        {2015 - 2017}
+        {}
+        {MSc. Candidate, Graduate Research Assistant}
+        {\href{http://www.uoguelph.ca/}{University of Guelph}}
+        {}
+        {\textbf{Thesis}: Data Integration from Multiple Historical Sources to
+                          Study Canadian Casualties of WWI
+        {\begin{itemize}
+        \item Proposed a scalable stepwise deterministic method to reliably
+              integrate datasets without labeled data. The method performs
+              comparably with a method that incorporates a Support Vector
+              Machine
+        \end{itemize}}}
+\end{twenty}
+
+\section{Publications}
+Freeman, P. F. (2016). \emph{Abstract Syntax Tree Retrieval: Inferring Student
+Coding Goals Using Case-based Reasoning and Code Similarity}. The University of
+Auckland. ResearchSpace@Auckland.
+
+Freeman, P., Watson, I., \& Denny, P. (2016). \emph{Inferring Student Coding
+Goals Using Abstract Syntax Trees}. Paper presented at 24th International
+Conference on Case-Based Reasoning Research and Development (ICCBR). Atlanta, GA.
+
+Han, K., Freeman, P., Han, H.-Y., Hamar, J., Stack Jr., J. F. (2014)
+\emph{Finite-Difference Time-Domain Modeling of Ultra-High Frequency Antennas
+on and Inside the Carbon Fiber Body of a Solar-Powered Electric Vehicle}. ACES
+Journal, Vol. 29, No. 6.
+
+%----------------------------------------------------------------------------------------
+%    EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    {Aug 2016 -}
+    {Present}
+    {Software Researcher}
+    {\href{https://pal.auckland.ac.nz/}{Physical Acoustics Laboratory}}
+    {}
+    {\begin{itemize}
+    \item Currently involved in building a realtime data ingestion pipeline on a Kafka cluster using Spark Streaming, to detect SMS spammers on Bell's network in realtime
+    \end{itemize}}
+        \\
+        \twentyitem
+        {Sep 2015 -}
+        {May 2016}
+        {Co-founder \& Full Stack Developer}
+        {\href{http://www.localxchange.ca/}{LocalXChange Inc.}}
+        {}
+        {{\begin{itemize}
+        \item In a team of 2, raised \$8,000 in funding from The Hub incubator at the University of Guelph, to develop a prototype hyperlocal content platform, aimed at delivering local news and events from community organizations to local users in realtime (i.e., hyperlocal)
+        \item In a team of 3, built hybrid mobile \& web apps with Ionic, Angular.js and MongoDB, surpassing 1,000 users within a month since launch
+        \item Met with city officials, including the Mayor of Guelph, and university officials to discuss marketing \& business strategies for the platform 
+    \end{itemize}}
+        } \\   
+\twentyitem
+       {Sep 2015 -}
+        {Dec 2016}
+        {Graduate Teaching Assistant}
+        {\href{http://www.uoguelph.ca}{University of Guelph}}
+        {}
+        {{\begin{itemize}
+        \item TA for CIS*2430 (OOP), CIS*4150 (Software Reliability \& Testing) and CIS*3530 (Database Systems \& Concepts) courses
+    \end{itemize}}
+        }
+        
+    %\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\end{document} 
