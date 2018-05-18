@@ -10,6 +10,7 @@
 \RequirePackage[sfdefault]{ClearSans}
 
 \def\arrow#1{\pspicture[shift=2pt](#1,0)\psline{->}(#1,0)\endpspicture}
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
 
 \usepackage{pstricks}
 
@@ -329,7 +330,7 @@
 % }
 
 \newcommand{\twentyitem}[6]{%
-    #1&\parbox[t]{0.83\textwidth}{%
+    \small#1&\parbox[t]{0.83\textwidth}{%
         \textbf{#3}% 
         \hfill%
         {\footnotesize#4}%
