@@ -376,15 +376,15 @@
     %  specifies the minimum size of the bubbles
     bubble node size = 0.5cm,
     % specifies which is the distance among the bubble center node and the other bubbles
-    distance center/other bubbles = 0.3cm,
+    distance center/other bubbles = 0.35cm,
     % sets the distance from the text to the border of the bubble center node
-    distance text center bubble = 0.5cm,
+    distance text center bubble = 0.6cm,
     % set center bubble color
     bubble center node color = pblue,
     % define the list of colors usable in the diagram
-    set color list = {lightgray, materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
+    uniform color list = {orange!40 for 5 items},
     % sets the opacity at which the bubbles are shown
-    bubble fill opacity = 0.6,
+    bubble fill opacity = 0.5,
     % sets the opacity at which the bubble text is shown
     bubble text opacity = 1,
 }
