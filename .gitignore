@@ -3,3 +3,6 @@
 *.pdf
 *.out
 *.swp
+__latexindent_temp.tex
+*.fdb_latexmk
+*.fls
