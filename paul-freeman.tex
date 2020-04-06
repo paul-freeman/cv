@@ -4,7 +4,7 @@
 % Version 1.0 (14/7/16)
 %
 % Original author:
-% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by
 % Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
 %
 % License:
@@ -21,37 +21,39 @@
 \cvsite{anaconda.org/freemapa}{pypi.org/user/freemapa}
 \cvmail{paul.freeman.cs@gmail.com}
 
-\programming{{JavaScript $\textbullet$ C\# $\textbullet$ Go / 3},
-             {C++ $\textbullet$ Java $\textbullet$ Kotlin / 3.5},
-             {Python $\textbullet$ C $\textbullet$ Haskell $\textbullet$ Elm / 5}}
+\programming{{Java $\textbullet$ C++ $\textbullet$ Haskell / 3},
+             {Go $\textbullet$ JavaScript $\textbullet$ C\# $\textbullet$ C / 4.7},
+             {Python $\textbullet$ Purescript $\textbullet$ Elm / 5.8}}
 
-\newcommand\skills{ 
+\newcommand\skills{
     \smartdiagram[bubble diagram]{
         \textbf{Scientific}\\\textbf{Computing},
         \textbf{Full Stack}\\\textbf{Web Dev},
         \textbf{Functional}\\\textbf{Programming},
         \textbf{Machine}\\\textbf{Learning},
         \textbf{Automation},
-        \textbf{Statistical}\\\textbf{Analysis}
+        \textbf{Artificial}\\\textbf{Intelligence}
     }
 }
 
-\projects{\textbf{PLACE}
-          A modular laboratory automation framework, using a combination of
-          Python, Elm, and JavaScript
+\projects{\textbf{Group Consensus}
+          Distributed group consensus based on cellular automata
 
-          \textbf{DTW}
-          A fast Cython implementation of the Dynamic Time Warping algorithm,
-          designed to replace a slower R dependency
+          \textbf{PLACE}
+          A modular laboratory automation framework written in Python
 
-          \textbf{RUS}
-          Python and C implementation of forward and inverse algorithms for
-          Resonant Ultrasound Spectroscopy
+          \textbf{AARS Sequencing}
+          Alignment of genetic data to explore the origins of life
 
           \textbf{MUN33BOT}
-          Autonomous financial management system which uses spending patterns
-          and statistical analysis to learn and provide future spending
-          recommendations
+          Autonomous financial management using statistical analysis
+
+          \textbf{Python Workshop}
+          6-hour Python workshop for maths and physics students
+
+          \textbf{RUS}
+          Python and C implementation of Resonant Ultrasound Spectroscopy
+          algorithms
 }
 
 \begin{document}
@@ -59,26 +61,37 @@
 
 \section{Experience}
 \begin{twenty}
+\twentyitem{2018--2020}
+           {}
+           {Software Developer (current)}
+           {\href{https://sylo.io/}{Sylo - Backend Development Team}}
+           {}
+           {Purescript developer for a decentralised messaging startup. Specialising
+           in decentralised algorithm development, peer-to-peer networks, and
+           strongly typed programming using functional programming languages.
+           Skills: \emph{Purescript, Elm, JavaScript, Go, C, Libp2p, GitHub,
+           Protobuf}} \\
+
 \twentyitem{2016--2018}
            {}
-           {Software Engineer}
+           {Software Researcher}
            {\href{https://pal.auckland.ac.nz/}{UoA - Physical Acoustics Laboratory}}
            {}
-           {Full stack development of a modular laboratory automation
+           {Research and full stack development of a modular laboratory automation
            framework: from design; to implementation; to rollout, training, and
            maintenance.
            Skills: \emph{Python, Elm, Django, JavaScript, Github, C, Cython, JSON,
-           Java, Lua, websockets, CSS, conda, PyPi, NumPy}} \\
+           Java, Lua, websockets, CSS, conda}} \\
 
-\twentyitem{2014--2016}
+\twentyitem{2011--2016}
            {}
            {Computer Science Tutor}
-           {\href{http://www.auckland.ac.nz/}{UoA - Computer Science Dept}}
+           {\href{http://www.auckland.ac.nz/}{UoA}/\href{http://www.oregonstate.edu/}{OSU} - Computer Science Dept}
            {}
-           {Educated computer science students as the solo tutor for the
-           Assembly and C programming course. Redeveloped the course slides and
-           tutor materials to increase student engagement.
-           Skills: \emph{Assembly, C, Linux, Vim}} \\
+           {Assisted with a wide range of courses, including: microcontroller
+           programming, C development, Linux systems programming, translators
+           \& compilers, and Qt development.
+           Skills: \emph{Assembly, C, Linux, Vim, Haskell, C\#}} \\
 
 \twentyitem{2013--2013}
            {}
@@ -98,24 +111,14 @@
            debug embedded code within aeronautical navigation hardware.
            Skills: \emph{\CC, StarTeam, Jira, Lua,~.NET, Perl}} \\
 
-\twentyitem{2011--2014}
-           {}
-           {Computer Science Teaching Assistant}
-           {\href{http://www.oregonstate.edu/}{OSU - Computer Science Dept}}
-           {}
-           {Assisted with a wide range of courses, including: microcontroller
-           programming, C development, Linux systems programming, translators
-           \& compilers, and Qt development.
-           Skills: \emph{Assembly, C, Linux, Qt, Haskell, C\#}} \\
-
 \twentyitem{2010--2011}
            {}
-           {Software Validation Intern}
+           {Software Validation}
            {\href{https://www.becpdx.org/}{Business Education Compact - Intel}}
            {}
            {Developed and executed validation tests for embedded software on 2D
            and 3D flat panel televisions.
-           Skills: \emph{C, Bash, Linux, Subversion}} \\
+           Skills: \emph{C, Bash, Linux}} \\
 
 \twentyitem{1997--2010}
            {}
@@ -126,8 +129,8 @@
            \href{https://www.staples.com/}{Staples}}
            {}
            {Prior to studying computer science and graphic design, worked
-           successfully within the retail sector. With a variety of employers,
-           consistently excelled in leadership roles, managing teams of 5--50
+           successfully within the retail sector with a variety of employers.
+           Consistently excelled in leadership roles, managing teams of 5--50
            employees.
            Skills: \emph{management, leadership, communication, sales}}
 
@@ -135,12 +138,20 @@
 
 \section{Education}
 \begin{twenty}
-    \twentyitem{2014--2016}{}{M.S., Computer Science}{\href{https://www.cs.auckland.ac.nz/en.html}{University of Auckland}}{}{First Class Honours}
+    \twentyitem{2014--2016}{}{M.S., Computer Science}{\href{https://www.cs.auckland.ac.nz/en.html}{University of Auckland}}{}{First Class Honours - Artificial Intelligence}
     \twentyitem{2010--2014}{}{B.S., Computer Science}{\href{http://eecs.oregonstate.edu/academics/undergraduates/computer-science}{Oregon State University}}{}{Summa Cum Laude}
     \twentyitem{2008--2010}{}{A.A., Graphic Design}{\href{https://www.pcc.edu/programs/graphic-design/}{Portland Community College}}{}{Highest Honors}
 \end{twenty}
 
 \section{Publications}
+
+Freeman, P. \& Shepherd, J. (2020). \emph{Data Acquisition and Experimental
+Control with Python}. In Smith, W. (Ed.): \emph{Experimental Physics: Principles and Practice for the
+Laboratory} (pp. 195-226). CRC Press.
+
+Schlitter, F., San Pedro, J. C., Freeman, P., Lowcay, C. (2020). \emph{Sylo
+Protocol: Secure Group Messaging}. \href{http://sylo.io/whitepaper/sylo-protocol.pdf}{http://sylo.io/whitepaper/sylo-protocol.pdf}
+
 Freeman, P. F. (2016). \emph{Abstract Syntax Tree Retrieval: Inferring Student
 Coding Goals Using Case-based Reasoning and Code Similarity}. The University of
 Auckland. ResearchSpace@Auckland.
@@ -152,6 +163,6 @@ Conference on Case-Based Reasoning Research and Development (ICCBR). Atlanta, GA
 Han, K., Freeman, P., Han, H.-Y., Hamar, J., Stack Jr., J. F. (2014).
 \emph{Finite-Difference Time-Domain Modeling of Ultra-High Frequency Antennas
 on and Inside the Carbon Fiber Body of a Solar-Powered Electric Vehicle}. ACES
-Journal, Vol. 29, No. 6.
+Journal, Vol. 29.6.
 
-\end{document} 
+\end{document}
