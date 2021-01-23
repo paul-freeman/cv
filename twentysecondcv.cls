@@ -143,8 +143,7 @@
 \newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
 \newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
-\newcommand{\cvsite}[2]{\newcommand{\cvsitea}{#1}
-                        \newcommand{\cvsiteb}{#2}}
+\newcommand{\cvsite}[1]{\newcommand{\cvsitea}{#1}}
 \newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
 \newcommand{\cvname}[1]{\renewcommand{\cvname}{#1}}
@@ -233,17 +232,10 @@
       \ifthenelse{\equal{\href{\cvsitea}{\cvsitea}}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{2.8mm} \huge \textnormal{\textcolor{test}{\faGlobe}}
+              \hspace{2.8mm} \huge \textnormal{\textcolor{test}{\faPencil}}
               \end{array}
               $} 
             & \href{http://\cvsitea}{\cvsitea} \\}
-      \ifthenelse{\equal{\href{\cvsiteb}{\cvsiteb}}{}}{}{
-            {$
-              \begin{array}{l}
-              \hspace{2.8mm} \huge \textnormal{\textcolor{test}{\faGlobe}}
-              \end{array}
-              $} 
-            & \href{http://\cvsiteb}{\cvsiteb} \\}
             
     \end{tabular}
 
@@ -283,7 +275,7 @@
 
 \def\@sectioncolor#1#2#3{%
     {%
-        \color{pblue} #1#2#3%
+        \color{headercolor} #1#2#3%
     }%
 }
 
