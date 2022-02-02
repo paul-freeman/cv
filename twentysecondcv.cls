@@ -187,7 +187,7 @@
     %------------------------------------------------
     
         \vspace{4mm}
-    {\Huge\color{pblue}\cvname}
+    {\Huge\color{black}\cvname}
     
     \vspace{2mm}
 
@@ -196,61 +196,61 @@
     {\Large\color{black!80}\cvjobtitle}
 
     %------------------------------------------------
-    
+
     \vspace{4mm}
     \renewcommand{\arraystretch}{2}
-    \begin{tabular}{p{1cm} @{\hskip 0.5cm}p{5cm}}
+    \begin{tabular}{p{0.7cm} @{\hskip 0.5cm}p{6cm}}
       \ifthenelse{\equal{\cvnumberphone}{}}{}{
               {$
               \begin{array}{l}
-              \hspace{4mm} \Huge \textnormal{\faMobile} 
+              \hspace{1.5mm} \Huge \textnormal{\faMobile}
               \end{array}
-              $} 
+              $}
             & \cvnumberphone\\}
-            
+
       \ifthenelse{\equal{\cvmail}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{2.5mm} \huge \textnormal{\textcolor{yt}{\faEnvelopeO}}
+              \hspace{0mm} \huge \textnormal{\textcolor{yt}{\faEnvelopeO}}
               \end{array}
-              $} 
+              $}
             & \href{mailto:\cvmail}{\cvmail} \\}
-      
+
        \ifthenelse{\equal{\cvlinkedin}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{3mm} \huge \textnormal{\textcolor{linkedin}{\faLinkedin}}
+              \hspace{0.5mm} \huge \textnormal{\textcolor{linkedin}{\faLinkedin}}
               \end{array}
               $} & \href{https://www.\cvlinkedin}{\cvlinkedin} \\
-            }  
+            }
         \ifthenelse{\equal{\cvgithub}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{3mm} \huge \textnormal{\faGithub}
+              \hspace{0.5mm} \huge \textnormal{\faGithub}
               \end{array}
               $} & \href{https://www.\cvgithub}{\cvgithub} \\
-            }   
+            }
       \ifthenelse{\equal{\href{\cvsitea}{\cvsitea}}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{2.8mm} \huge \textnormal{\textcolor{test}{\faGlobe}}
+              \hspace{0.3mm} \huge \textnormal{\textcolor{test}{\faGlobe}}
               \end{array}
-              $} 
+              $}
             & \href{http://\cvsitea}{\cvsitea} \\}
       \ifthenelse{\equal{\href{\cvsiteb}{\cvsiteb}}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{2.8mm} \huge \textnormal{\textcolor{test}{\faGlobe}}
+              \hspace{0.3mm} \huge \textnormal{\textcolor{test}{\faGlobe}}
               \end{array}
-              $} 
-            & \href{http://\cvsiteb}{\cvsiteb} \\}
-            
+              $}
+            & \href{http://\cvsiteb}{\small \cvsiteb} \\}
+
     \end{tabular}
 
     %------------------------------------------------
     \vspace{4mm}
     \profilesection{Skills}{4cm}
-    
+
     {\large \textbf{Overview}}
 
     \skills
@@ -283,7 +283,7 @@
 
 \def\@sectioncolor#1#2#3{%
     {%
-        \color{pblue} #1#2#3%
+        \color{black} #1#2#3%
     }%
 }
 
@@ -291,7 +291,7 @@
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
     {%
-        \LARGE\headingfont\color{headercolor}%
+        \LARGE\headingfont\color{black}%
         \@sectioncolor #1%
     }
   \par\vspace{\parskip}

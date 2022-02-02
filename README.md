@@ -1,4 +1,4 @@
-![CV Screenshot](screen.png)
+![CV Screenshot](paul-freeman.png)
 
 # About my CV
 
@@ -10,6 +10,12 @@ the base of my current CV.
 
 The license on this CV is the Apache License, Version 2.0, so feel free to use
 my code as a starting point for your own CV.
+
+## Installation (Docker *preferred*)
+
+1. Install Docker
+
+2. Run `make`
 
 ## Installation (Ubuntu - TexLive 2019)
 
@@ -25,13 +31,13 @@ my code as a starting point for your own CV.
 
 3. Compile the CV with xelatex.
 
-If this doesn't work, you're basically on your own. It took me a bit of time to
-figure it out myself. Good luck!
+If one of these doesn't work, you're basically on your own. It took me a bit of
+time to figure it out myself. Good luck!
 
 ## License
 
 ```
-Copyright 2020 Paul Freeman
+Copyright 2022 Paul Freeman
 Copyright 2016 Harshavardhan Gadgil
 
 Licensed under the Apache License, Version 2.0 (the "License");
