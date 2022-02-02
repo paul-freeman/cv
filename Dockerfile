@@ -20,7 +20,7 @@ RUN lualatex paul-freeman.tex
 COPY ./ImageMagick-6/policy.xml /etc/ImageMagick-6/policy.xml
 
 # convert the CV to PNG
-RUN convert -density 300 paul-freeman.pdf -quality 90 paul-freeman.png
+RUN convert -density 300 paul-freeman.pdf -quality 90 -background white -alpha remove -flatten paul-freeman.png
 
 # put in outputs in a clean (and small) image
 FROM alpine
