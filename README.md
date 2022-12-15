@@ -11,7 +11,15 @@ the base of my current CV.
 The license on this CV is the Apache License, Version 2.0, so feel free to use
 my code as a starting point for your own CV.
 
-## Installation (Docker *preferred*)
+## Installation (VSCode Dev Container *preferred*)
+
+1. Open in VSCode
+
+2. Launch in dev container
+
+3. Run `make`
+
+## Installation (Docker)
 
 1. Install Docker
 
