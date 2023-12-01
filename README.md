@@ -1,4 +1,4 @@
-![CV Screenshot](paul-freeman.png)
+![CV Screenshot](cv.png)
 
 # About my CV
 
@@ -45,7 +45,7 @@ time to figure it out myself. Good luck!
 ## License
 
 ```
-Copyright 2022 Paul Freeman
+Copyright 2023 Paul Freeman
 Copyright 2016 Harshavardhan Gadgil
 
 Licensed under the Apache License, Version 2.0 (the "License");
