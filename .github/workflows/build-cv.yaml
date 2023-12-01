@@ -1,0 +1,30 @@
+name: Build CV
+
+on:
+  push:
+    paths:
+      - 'cv.tex'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+
+    - name: Set up Docker
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y docker.io
+
+    - name: Run Makefile
+      run: make
+
+    - name: Commit and push if there are changes
+      run: |
+        git config --global user.name ${{ secrets.GH_NAME }}
+        git config --global user.email ${{ secrets.GH_EMAIL }}
+        git add cv.pdf cv.png
+        git commit -m "Automated CV Update" || exit 0
+        git push
